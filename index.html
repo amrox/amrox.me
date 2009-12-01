@@ -113,7 +113,7 @@ addLoadEvent(faviconizeFavilist);
 	}
 
 	#side {
-	 	color: #999999;
+	 	color: #bbbbbb;
 	 	float: right;
 		width: 25%;
 
@@ -121,30 +121,40 @@ addLoadEvent(faviconizeFavilist);
 		border-left-color: #cccccc;
 		border-left-width: 1px;
 		border-left-style: solid;
-		font-size: 0.9em;
 	}
 	
 	#side p {
-		margin-bottom: 5px;
+		padding-bottom: 10px;
 	}
 	
 	#side a {
 		color: #0033ff;
 		text-decoration: none;
 	}
-
+	
 	#side a:hover {
 		text-decoration: underline;
 	}
-		
-	body {
-		background-position: 20px 20px;
-		background-repeat: no-repeat;
-		background-image: url(semiclamation-bg.png);
-		height: 100%;
-		font-family: Helvetica, sans-serif;
-	}
 	
+	#side ul {
+		margin-bottom: 10px;
+		font-size: 0.9em;
+		list-style: none;
+	}
+
+	#side ul.mainlinks {
+		list-style: none;
+	}
+
+	#side ul.mainlinks a {
+		font-size: 1.1em;
+/* 		color: #ff6633; */
+	}
+
+	#side ul.favilist a {
+		color: #0033ff;
+	}
+
 	img.faviconimg {
 		border:0;
 		width:11px;
@@ -156,19 +166,26 @@ addLoadEvent(faviconizeFavilist);
 		list-style:none;
 	}
 
+	body {
+		background-position: 20px 20px;
+		background-repeat: no-repeat;
+		background-image: url(semiclamation-bg.png);
+		height: 100%;
+		font-family: Helvetica, sans-serif;
+	}
+	
 	.paren {
 		color: #bbbbbb;
 	}
 	
 	.highlight {
-		
 		background-color: #ffffee;
-		
 	}
 	
 	.inline {
 		display: inline;
 	}
+
 	
 	</style>
 	</head>
@@ -177,7 +194,7 @@ addLoadEvent(faviconizeFavilist);
 		<div id="main">
 		<h1 class="inline">Andy Mroczkowski</h1>
 		<p class="inline">
-		is a software developer living in Philadelphia, PA <span class="paren">(Philly)</span>. He is passionate about building applications for <span class="paren">(but not limited to)</span> Mac, iPhone and the web. 
+		<span class="paren">(amrox)</span> is a software developer living in Philadelphia, PA <span class="paren">(Philly)</span>. He is passionate about building applications for <span class="paren">(but not limited to)</span> Mac, iPhone and the web. 
 		</p>
 		<p>
 		Andy works for <a href="http://neatco.com">The Neat Company</a> <span class="paren">(formerly NeatReceipts)</span> and also organizes <a href="http://phillycocoa.org">PhillyCocoa</a> <span class="paren">(Philly Mac and iPhone programming group)</span>.
@@ -187,16 +204,17 @@ addLoadEvent(faviconizeFavilist);
 		</p>
 		</div>
 		<div id="side">
-		<p>
-		Organizations:
+		<ul class="mainlinks">
+		<li><a href="http://mrox.net/blog">Blog <span class="paren">(articles)</span></a></li>
+		<li><a href="http://log.mrox.net">Tumblelog <span class="paren">(&#8253;)</span></a></li>
+		</ul>
+		(Organizations)
 		<ul class="favilist">
 		<li><a href="http://phillycocoa.org">PhillyCocoa</a></li>
 		<li><a href="http://indyhall.org">Independents Hall</a></li>
 		<li><a href="http://hive76.org">Hive 76</a></li>
 		</ul>
-		</p>
-		<p>
-		Elsewhere:
+		(Elsewhere)
 		<ul class="favilist">
 		<li><a href="http://twitter.com/amrox">Twitter</a></li>
 		<li><a href="http://stackoverflow.com/users/4468/amrox">Stack Overflow</a></li>
@@ -205,7 +223,13 @@ addLoadEvent(faviconizeFavilist);
 		<li><a href="http://www.flickr.com/photos/amrox">Flickr</a></li>
 		<li><a href="http://www.linkedin.com/in/andymroczkowski">LinkedIn</a></li>
 		</ul>
-		</p>
+		(Contact)
+		<ul>
+		<li>
+		<img src="postnb.gif">
+		<a href="javascript:location='mailto:\u0061\u006e\u0064\u0079\u0040\u006d\u0072\u006f\u0078\u002e\u006e\u0065\u0074';void 0">Email</a>
+		</li>
+		</ul>
 		</div>
 	</div>
 	</body>
