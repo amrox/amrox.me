@@ -1,0 +1,212 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+	<head>
+	<link rel="openid.server" href="http://www.myopenid.com/server" />
+	<link rel="openid.delegate" href="http://amrox.myopenid.com/" />
+	<link rel="openid2.local_id" href="http://amrox.myopenid.com" />
+	<link rel="openid2.provider" href="http://www.myopenid.com/server" />
+	<meta http-equiv="X-XRDS-Location" content="http://www.myopenid.com/xrds?username=amrox.myopenid.com" />
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<meta name="description" content="Andy Mroczkowski's home page." />
+	<meta name="keywords" content="andy mroczkowski" />
+
+	<title>Andy Mroczkowski : The Home Page</title>
+
+	<script type="text/javascript">
+	// from http://www.askthecssguy.com/examples/faviconcues/favilist.html
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      oldonload();
+      func();
+    }
+  }
+}
+
+function faviconizeFavilist() { 
+  if (!document.getElementsByTagName) return false;
+  if (!document.createElement) return false;
+  var ul = document.getElementsByTagName("ul");
+  for (var i=0; i<ul.length; i++) {
+  	if (ul[i].className == "favilist") {
+  		var links = ul[i].getElementsByTagName("a");
+  		for (var j=0; j<links.length; j++) {
+  			var hoststring = /^http:/;
+  			var hrefvalue = links[j].getAttribute("href",2);
+			if (hrefvalue.search(hoststring) != -1) {
+				var domain = hrefvalue.match(/(\w+):\/\/([^/:]+)(:\d*)?([^# ]*)/);
+				domain = RegExp.$2;
+				var cue = document.createElement("img");
+				cue.className = "faviconimg";
+				var cuesrc = "http://"+domain+"/favicon.ico";
+				cue.setAttribute("src",cuesrc);
+				cue.onerror = function () {
+					this.src = "external.gif";
+					}
+				links[j].parentNode.insertBefore(cue,links[j]);
+			}
+		}
+  	}
+  }
+}
+addLoadEvent(faviconizeFavilist);
+</script>
+
+	<style type="text/css">
+	
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.clear {
+		clear: both;
+	}
+	
+	#container {
+ 		margin-top: 60px;
+ 		width: 650px;
+	
+	    height: 100%;
+	    height: auto !important;
+	    min-height: 100%;
+	
+		margin-right: auto;
+		margin-left: 120px;
+ 		overflow: hidden;
+	}
+
+	#main {
+		float: left;
+	 	width: 70%;
+ 		padding: 5px;
+ 		color: #666666;
+ 		font-size: 1.5em;
+ 		font-family: Garamond, Times, serif;
+	}
+	
+	#main h1 {
+		font-size: 125%;
+		color: #ff6633;
+		padding: 0px 5px;
+	}
+
+	#main a {
+ 		color: #666666;
+	}
+
+	#main a:hover {
+	 	color: #0033ff;
+/* 		background-color: #eeeeee; */
+		text-decoration: underline;
+	}
+	
+	#main p {
+		line-height: 120%;
+ 		margin-top: 15px; 
+	}
+
+	#side {
+	 	color: #999999;
+	 	float: right;
+		width: 25%;
+
+		padding: 5px;
+		border-left-color: #cccccc;
+		border-left-width: 1px;
+		border-left-style: solid;
+		font-size: 0.9em;
+	}
+	
+	#side p {
+		margin-bottom: 5px;
+	}
+	
+	#side a {
+		color: #0033ff;
+		text-decoration: none;
+	}
+
+	#side a:hover {
+		text-decoration: underline;
+	}
+		
+	body {
+		background-position: 20px 20px;
+		background-repeat: no-repeat;
+		background-image: url(file:////Users/amrox/Desktop/bigbang3.png);
+		height: 100%;
+		font-family: Helvetica, sans-serif;
+	}
+	
+	img.faviconimg {
+		border:0;
+		width:11px;
+		height:11px;
+		padding:0 4px;
+	}
+
+	ul.favilist {
+		list-style:none;
+	}
+
+	.paren {
+		color: #bbbbbb;
+	}
+	
+	.highlight {
+		
+		background-color: #ffffee;
+		
+	}
+	
+	.inline {
+		display: inline;
+	}
+	
+	</style>
+	</head>
+	<body>
+	<div id="container">
+		<div id="main">
+		<h1 class="inline">Andy Mroczkowski</h1>
+		<p class="inline">
+		is a software developer living in Philadelphia, PA <span class="paren">(Philly)</span>. He is passionate about building applications for <span class="paren">(but not limited to)</span> Mac, iPhone and the web. 
+		</p>
+		<p>
+		Andy works for <a href="http://neatco.com">The Neat Company</a> <span class="paren">(formerly NeatReceipts)</span>. He also organizes <a href="http://phillycocoa.org">PhillyCocoa</a> <span class="paren">(Philly Mac and iPhone programming group)</span>, and is involved with Independents Hall (co-working space) and Hive 76 (hacker space).
+		</p>
+		<p>
+		 <span class="paren">(road)</span>, disc golf <span class="paren">(really)</span>, electronic music <span class="paren">(everything but trance)</span>, inventing new forms of punctuation <span class="paren">(see background)</span>, vegetarian food <span class="paren">(usually)</span>, and beer <span class="paren">(always)</span>.
+		</p>
+		</div>
+		<div id="side">
+		<p>
+		Organizations:
+		<ul class="favilist">
+		<li><a href="http://phillycocoa.org">PhillyCocoa</a></li>
+		<li><a href="http://indyhall.org">Independents Hall</a></li>
+		<li><a href="http://hive76.org">Hive 76</a></li>
+		</ul>
+		</p>
+		<p>
+		Elsewhere:
+		<ul class="favilist">
+		<li><a href="http://twitter.com/amrox">Twitter</a></li>
+		<li><a href="http://stackoverflow.com/users/4468/amrox">Stack Overflow</a></li>
+		<li><a href="http://github.com/amrox">GitHub</a>
+		<li><a href="http://delicious.com/amrox">Delicious</a></li>
+		<li><a href="http://www.flickr.com/photos/amrox">Flickr</a></li>
+		<li><a href="http://www.linkedin.com/in/andymroczkowski">LinkedIn</a></li>
+		</ul>
+		</p>
+		</div>
+	</div>
+	</body>
+</html>
